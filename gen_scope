@@ -1,0 +1,11 @@
+#! /bin/sh
+#
+# gen_scope.sh
+# Copyright (C) 2017 Yuzhong Wen <wenyuzhong1@huawei.com>
+#
+# Distributed under terms of the MIT license.
+#
+
+find . -type f -name '*.c' > cscope.files
+find . -type f -name '*.h' >> cscope.files
+cscope -b -q -k

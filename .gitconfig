@@ -1,0 +1,30 @@
+[http]
+        sslVerify = false
+        postBuffer = 1048576000
+[user]
+        name = Min Chen
+        email = chenmin46@huawei.com
+[sendemail]
+        smtpserver = smtpscn.huawei.com
+        smtpuser = c00416985
+        smtpserverport = 25
+        suppresscc = all
+[core]
+        editor = vim
+[credential]
+        helper = store
+[alias]
+#       lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        simlog = log --graph --color --pretty=format:' %Cred%h %Creset/ %<(10,trunc)%Cblue%an%Creset | %<(60,trunc)%s | %ci %Cred%d'
+        alllog = log --graph --color --pretty=format:' %Cred%h %Creset/ %<(10,trunc)%Cblue%an%Creset | %<(60,trunc)%s | %ci %Cred%d' --remotes --branches
+        st = status
+        co = checkout
+        ci = commit
+        br = branch
+        unstage = reset HEAD
+        last = log -1
+
+[color]
+        ui = auto
+[push]
+        default = matching

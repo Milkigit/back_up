@@ -1,0 +1,218 @@
+set nocompatible              " be iMproved, required
+set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
+filetype on                  " required
+set incsearch
+set tags=tags;/
+" set path=.,,,/home/chenmin/hm-teeos/**
+set path=.,,,/home/chenmin/hm-verif-kernel/**
+
+" ==============================================================================
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" ==============================================================================
+" 安装的所有插件
+call vundle#begin()
+
+" 必须安装，let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" 来自github
+
+"主题
+Plugin 'flazz/vim-colorschemes'
+
+"底部状态栏
+Plugin 'Lokaltog/vim-powerline'
+
+"文件目录
+Plugin 'scrooloose/nerdtree'
+map <F7> :NERDTreeToggle<CR>
+
+"快速查找
+Plugin 'kien/ctrlp.vim'
+
+"快速注释
+Plugin 'scrooloose/nerdcommenter'
+
+"自动补全
+"Plugin 'Shougo/neocomplcache.vim'
+
+"括号补全
+Plugin 'jiangmiao/auto-pairs'
+
+"语法分析
+"Plugin 'vim-syntastic/syntastic'
+"强大的自动补全
+Bundle 'Valloric/YouCompleteMe'
+
+"F4打开函数列表
+Bundle 'majutsushi/tagbar'
+nmap <F4> :TagbarToggle<CR>
+"tagbar以来ctags插件"
+let g:tagbar_ctags_bin = 'ctags'
+
+"鼠标滚轮滑动
+map <C-A> :set mouse=a<CR>
+map <C-Z> :set mouse=v<CR>
+
+"行号
+map <C-N> :set nonu<CR>
+map <C-M> :set nu<CR>
+
+" 打开文件时，跳转到上次编辑到的地方，除非第一行有标记
+"autocmd BufReadPost *
+"     \ if line("'\"") > 1 && line("'\"") <= line("$") |
+"     \ exe "normal! g`\"" |
+"     \ endif
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+
+"需要在/etc/vim/vimrc中确保没有注释掉以下三行
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" 来自vim
+
+" non github repos
+
+call vundle#end()            " required
+
+" ==============================================================================
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+" ==============================================================================
+" vundle命令
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+
+" ==============================================================================
+" 组件设置
+" flazz/vim-colorschemes,主题设置
+ colorscheme  desert
+
+" solarized 配置 ( 需要在 terminal 中选择 solarized 配色，否则很难看)
+"       cd .vim/bundle
+"       git clone git://github.com/altercation/vim-colors-solarized.git
+" 终端使用solarized时，vim 背景色可能会产生冲突，需要指定 t_Co解决，貌似不需要
+" 如果terminal 也想使用 solarized，参见：
+"       https://github.com/Anthony25/gnome-terminal-colors-solarized
+" 如果 ls 的配色也使用 solarized，参见：
+"       https://github.com/seebi/dircolors-solarized
+set t_Co=16 " 指定颜色数目
+set background=dark
+"colorscheme solarized
+" 如果terminal没有使用solarized，那么指定solarized使用256兼容模式
+" let g:solarized_termcolors=256
+
+"NERDTree 插件配置
+map tt :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeShowHidden = 2 "NERDTREE显示隐藏文件
+" ==============================================================================
+" vim原生设置
+" set rnu "显示相对行号
+set nu
+syntax on " 打开语法检测
+
+set tabstop=8 "设置tab键长度
+set softtabstop=8 "设置tab键长度
+set shiftwidth=8
+set ts=8
+
+"set list "设置空格显示为+号
+"set listchars=trail:+
+set foldmethod=syntax "代码折叠
+set foldlevelstart=99 "默认不折叠
+
+set cursorline  "设置光标行
+set cursorcolumn "设置光标列
+set noswapfile "不要生成swap文件
+set nobackup
+set bufhidden=hide "当buffer被丢弃的时候隐藏它
+"set expandtab                 "Use space instead of tabs
+
+let mapleader = ","  "设置外部复制粘帖
+let g:mapleader = ","
+map Y "+y
+map P "+p
+
+"noremap ok o <esc> "插入新行
+"option+h 回到行首
+noremap ˙ ^
+"option+l 回到行尾
+noremap ¬ $
+"option+k 回到顶部
+noremap ˚ gg
+"option+j 回到底部
+noremap ∆ G
+"neocomplcache.vim
+"let g:neocomplcache_enable_at_startup = 1 "打开vim时自动打开
+"let g:neocomplcache_force_overwrite_completefunc = 1
+
+set pastetoggle=<F9>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" cscope setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("cscope")
+  set csprg=/usr/bin/cscope
+  set csto=1
+  set cst
+  set nocsverb
+  " add any database in current directory
+  if filereadable("cscope.out")
+      cs add cscope.out
+  endif
+ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+" 自动调整格式插件
+"Plugin 'Chiel92/vim-autoformat'
+"let g:formatdef_custom = '"astyle --options=none --lineend=linux --mode=c --style=linux --indent=force-tab=8 --indent-col1-comments --attach-namespaces --attach-classes --attach    -inlines --attach-extern-c --min-conditional-indent=0 --max-instatement-indent=80 --pad-oper --pad-header --unpad-paren --align-pointer=name --align-reference=name --max-code-len    gth=80 --break-after-logical"'
+"let g:formatters_cpp = ['custom']
+"let g:formatters_c = ['custom']
+"au BufWrite *.cc,*.hh,*.c,*.h :Autoformat
+
+" YouCompleteMe 强大的自动补全插件
+" 要想实现python的自动补全，需要vim 支持python，所以需要安装 vim-nox 版本
+" ycm_auto_trigger 自动打开自动补全，默认为1，关闭可以设置成0
+" 当想在某个文件编辑的时候打开， 可以 :let ycm_auto_trigger=1
+let g:ycm_auto_trigger=1
+" 按 TAB 选补全的时候，有时候上面会出现 vim 的 preview 窗口，会提示一些用法
+" 虽然有帮助作用，但是我不喜欢，可以通过下面的选项关闭
+set completeopt-=preview
+" 如果喜欢提示窗口，就是上面说的 preview，但是想让他自动消失
+" 可以通过下面的两个选项控制
+" let g:ycm_autoclose_preview_window_after_completion=1
+" let g:ycm_autoclose_preview_window_after_insertion=1
+" 指定C/C++的额外配置，可以自动补全C/C++的头文件等信息
+" 需要在 .ycm_extra_conf.py 的flags中添加：
+" '-isystem',
+" '/usr/include',
+" '-isystem',
+" '/usr/include/c++/4.8',
+" '-isystem',
+" '/usr/include',
+" '/usr/include/x86_64-linux-gun/c++',
+" 在 .ycm_extra_conf.py 中默认使用 C++11 标准检查语法，如果需要检查 C 语言，
+" 请把 '-std=c++11' 改成 '-std=c99'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+" 当前目录的 .ycm_extra_conf.py 和 ycm_global_ycm_extra_conf 都存在的时候，不要让我确认使用哪一个
+" 直接使用当前目录的
+" 如果想让 YouCompleteMe 使用当前目录下的头文件等内容去做语法检查、自动补全，
+" 那么将上面的 ycm_global_ycm_extra_conf 复制一份到当前目录，然后修改配置，比如 -I,-isystem 等
+let g:ycm_confirm_extra_conf=0
+
+""设置文件头
+function! HMBANNER()
+        0r ~/.vim/templates/mycopyright.c
+        language time en_US.UTF-8
+        exe "%s/@TIMESTAMP@/" . strftime("%a %b %d %H:%M:%S %Y"). "/g"
+endfunction
+autocmd BufNewFile      *.c call HMBANNER()
+autocmd BufNewFile      *.h call HMBANNER()

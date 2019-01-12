@@ -212,6 +212,7 @@ let g:ycm_confirm_extra_conf=0
 function! HMBANNER()
         0r ~/.vim/templates/mycopyright.c
         language time en_US.UTF-8
+        exe "%s/@year@/" . strftime("%Y"). "/g"
         exe "%s/@TIMESTAMP@/" . strftime("%a %b %d %H:%M:%S %Y"). "/g"
 endfunction
 autocmd BufNewFile      *.c call HMBANNER()

@@ -1,0 +1,24 @@
+1. 启动docker进入bash
+docker run --privileged -ti -v `pwd`:/go/src/github.com/docker/docker --env DOCKER_GRAPHDRIVER=overlay2 --env DOCKER_GRAPHDRIVER2=overlay2 --env DOCKER_STORAGE_OPTS="overlay2.override_kernel_check=true" --env DOCKER_STORAGE_OPTS2="overlay2.override_kernel_check=true" rnd-dockerhub.xxx.com/library/dockercore-docker:v1.11.2 bash
+执行测试脚本
+./hack/make.sh binary test-integration-cli
+
+2.https://github.com/moby/moby/issues/13097
+docker run --rm --net=host --name slave --privileged -v /usr/lib64/libdevmapper.so.1.02:/usr/lib/libdevmapper.so.1.02 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/local/bin/docker -v /sys/fs/cgroup:/host/sys/fs/cgroup mesosphere/mesos-slave:0.22.1-1.0.ubuntu1404 --containerizers=docker,mesos --master=zk://${ZOOKEEPER_IPS}/mesos --cgroups_hierarchy=/host/sys/fs/cgroup
+
+3.修改docker的环境变量
+vim /usr/lib/systemd/system/docker.service
+vim /etc/sysconfig/docker
+
+DOCKER_STORAGE_OPTS="overlay2.override_kernel_check=true" GRAPHDRIVER="overlay2" TESTFLAGS="-check.f TestDaemonRestartWithSocketAsVolume" ./hack/make.sh binary test-integration-cli
+
+
+4.重启docker
+systemctl daemon-reload
+service docker restart
+systemctl show --property=Environment docker#查看docker环境变量
+
+5.当代码修改过后，需要重新测试。需要在启动容器的时候将本地编译好的containerd和runc目录挂载到容器的目录中，以避免版本不匹配造成的daemon无法启动的问题。
+docker run -ti --privileged -v `pwd`:/go/src/github.com/docker/docker -v <containerd>:/go/src/github.com/docker/containerd -v <runc>:/go/src/github.com/opencontainers/runc bash
+
+

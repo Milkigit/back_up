@@ -1,0 +1,89 @@
+最近因为要去外派了，工欲善其事，必先利其器！所以又回顾了一下自己github上所收藏的项目，也算是温故而知新吧。
+最流行的Android组件大全http://www.open-open.com/lib/view/open1409108030307.html
+Android开源项目分类汇总http://www.open-open.com/lib/view/open1406272852585.html
+Android开发免费类库和工具集合http://www.open-open.com/lib/view/open1404286864296.html
+Android开源项目大全 - 工具类http://www.open-open.com/lib/view/open1389949549882.html
+Android常用开源项目http://www.open-open.com/lib/view/open1400830463175.html
+Android开源工具库http://www.open-open.com/lib/view/open1388479529516.html
+ANDROID SDK 源码解析https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis
+Android 学习资料收集https://github.com/Freelander/Android_Data
+Android即时通讯和sns开源项目汇总https://github.com/CameloeAnthony/Perfect_IM_SNS
+GitHub 排名前 100 的安卓、iOS项目简介http://www.devstore.cn/essay/essayInfo/6485.html
+西瓜理财APP用到的开源库和工具整理http://mafei.me/2016/03/17/%E8%A5%BF%E7%93%9C%E7%90%86%E8%B4%A2APP%E7%94%A8%E5%88%B0%E7%9A%84%E5%BC%80%E6%BA%90%E5%BA%93%E5%92%8C%E5%B7%A5%E5%85%B7%E6%95%B4%E7%90%86/
+POP_Androidhttps://github.com/motianhuo/POP_Android
+List of Android Testing Librarieshttps://github.com/hotchemi/awesome-android-testing
+TimLiu-Androidhttps://github.com/Tim9Liu9/TimLiu-Android
+安卓APP代码架构，包含比较常用的开源库使用https://github.com/Frank-Zhu/AppCodeArchitecture
+Android studio 插件https://github.com/wangchang163/androidstudio-plugins
+Android-Tips 踩坑大全https://github.com/tangqi92/Android-Tips
+Interactive-animation收集android上开源的酷炫的交互动画和视觉效果。https://github.com/Rano1/Interactive-animation
+NiftyNotification库https://github.com/sd6352051/NiftyNotification
+android-common-lib主要包括：缓存(图片缓存、预取缓存、网络缓存)、公共View(下拉及底部加载更多ListView、底部加载更多ScrollView、滑动一页Gallery)及Android常用工具类(网络、下载、Android资源操作、shell、文件、Json、随机数、Collection等等)。https://github.com/Trinea/android-common
+Expandable Layout带来的各种动画的扩展布局一个Android库。您可以包括可选的内容，并使用无处不在。
+这里写图片描述
+https://github.com/wangchang163/ExpandableLayout
+ZBLibrary-Android快速开发框架坐标标准库ZBLibrary，是一个MVP架构的Android快速开发框架，提供一套开发标准（UI,Data,Listener）以及模板和工具类并规范代码。 封装层级少，简单高效兼容性好。Android Studio、Eclipse多平台支持。OKHttp、图片加载、自动缓存以及各种Base、Demo、UI、Util直接用。一句话实现全局滑动返回。BaseHttpListActivity，几行代码搞定http请求列表 加载和缓存；BaseView，自定义View竟然如此简单；万能的Entry，两个变量的Model/JavaBean再也不用写了；100多个常用style，一行搞定View属性，一键统一配置UI…
+https://github.com/TommyLemon/Android-ZBLibrary
+图片处理sdk(just for eclipse)1，图片编辑(图片添加，文字添加)，实现图片编辑中的图片添加，旋转，缩放，删除；文字的添加，大小缩放，字体更换，颜色更换，删除； 2，基本滤镜实现与接口封装； 涂鸦(画笔的样式，粗细，颜色，橡皮擦，贴图)； 相框(简单相框，酷炫相框)； 马赛就克(基本马赛克，酷炫马赛克，橡皮擦)及其接口封装 3，接下来， 图像剪切，旋转等功能实现测试接口封装； GIF与MP4，图片互转实现测试与接口封装；
+https://github.com/SkillCollege/PhotoEditDemo
+AndroidImageEditorAndroidImageEdit 安卓设备上图形编辑开源控件，支持自定义贴图 图片滤镜 图片旋转 以及图片剪裁操作https://github.com/siwangqishiq/ImageEditor-Android
+ToolsFinal简介Android开发常用的工具类https://github.com/SkillCollege/ToolsFinal
+Android-Rapid-Development-Of-LibraryAndroid 快速开发库，主要想实现一条属于自己的开发框架。包括网络访问，数据，UI等,将该项目分为四个模块，UI界面、网络、进阶、综合。
+https://github.com/lidong1665/AndroidRapidLibrary
+TLint根据虎扑新版api开发，基于Dagger2+RxJava+Retrofit+Material Design开发，使用mvp模式开发~纯练手之作，目前基本功能已完成，欢迎jrs来star和fork，有什么问题也可以提issuehttps://github.com/gzsll/TLint
+Point-of-AndroidAndroid 一些重要知识点解析整理
+WeChat这个项目是一个高仿微信，以及基于微信，由于一些经验和UI优化。实现功能：朋友们，表情，视频通话，文件传输等之间的文字聊天群聊从地址簿添加好友扫描二维码来添加好友，扫描QR码朋友之间传递微信公共账号信息推送朋友圈、https://github.com/motianhuo/wechat
+RadarScan这是Android一个雷达扫描显示的扫描图，超高仿QQ附近的人搜索展示相应的博文地址 http://blog.csdn.net/mr_immortalz/article/details/51319354
+https://github.com/ImmortalZ/RadarScan
+MicroReader一个小而美的阅读客户端，包含微信精选，IT之家(去广告),果壳热门，知乎日报，和视频推荐栏目，每天更换主题Retrofit 的使用，包括使用 Http 缓存、converter 的使用等；RxJava 的使用，包括配合 Retrofit、RxBus 的使用等；MVP 架构实践，包括 presenter 的生命周期管理；RecycleView + CardView 的使用；RecycleView 使用 ItemTouchHelper 实现拖拽移动到不同的列表，下拉刷新，上拉到底自动加载等；使用 Palette 从图片中取色；主题动态切换；Android 4.4 及以上版本的状态栏适配；FloatingActionButton 的自定义动作；AppCompatActivity 配合 PreferenceFragment 实现 Material Design 的设置界面；WebView 的使用，包括显示加载进度条、播放视频等；VideoView 的使用，包括自定义按钮；动态切换 NavigationView 的菜单项Android 抓包及逆向分析数据离线缓存使用Gradle多渠道打包及自定义编译的APK文件名Activity滑动返回的实现https://github.com/YiuChoi/MicroReader
+Android_DataAndroid 学习资料收集https://github.com/Freelander/Android_Data
+StickyHeaderListViewStickyHeaderListView
+StickyHeaderListView 是基于实际需求做出的灵活可定制的UI功能，具体实现功能如下：一、支持无限循环的广告位。二、高度可动态配置的Header2和Header3（使用GridView实现）。三、主要功能：分类、排序和筛选布局滑动到顶部后吸附、悬停。四、自定义FilterView筛选控件，支持动画显示与动画隐藏。五、支持标题栏背景颜色渐变、字体颜色渐变。六、数据不足一屏动态添加空数据占位。七、数据为空时，ListView加载暂无数据视图。八、思路清晰、界面优美，添加ripple点击效果。九、支持下拉刷新和上拉加载更多功能。https://github.com/sfsheng0322/StickyHeaderListView
+android-open-source-project-crackingAndroid 优质开源项目剖析与技术进阶https://github.com/android-cjj/android-open-source-project-cracking
+Useful-Open-Source-AndroidAndroid开源库https://github.com/ddwhan0123/Useful-Open-Source-Android
+OkHttpUtils封装了okhttp的网络框架，支持大文件上传下载，上传进度回调，下载进度回调，表单上传（多文件和多参数一起上传），链式调用，可以自定义返回对象，支持Https和自签名证书，支持cookie自动管理，支持四种缓存模式缓存网络数据，支持301、302重定向，扩展了统一的上传管理和下载管理功能https://github.com/jeasonlzy0216/OkHttpUtils、
+Android开发网站整理Android开发论坛、社区、网站，以技术为主http://mobdevgroup.com/platform/android/resources
+AndroidPicker安卓选择器类库，包括日期时间选择器、单项选择器、二三级联动选择器、地址选择器、颜色选择器、文件目录选择器、数字选择器等，可自定义顶部及底部界面，可自定义窗口动画。https://github.com/gzu-liyujiang/AndroidPicker
+AndroidBaseUtilsLogUtil（L）的LogHelperContextUtil的（CTX）ResourcesUtil（RES）PreferencesUtil（县）ExtrasBinderUnitConverter（单位）KeyboardUtil（键盘）APILevelDisplayUtilViewUtilServiceUtilThemeUtilActivityBuilderBundleBuilderPackageUtilVibratorUtilClipboardManagerUtilTypedValueUtilWindowManagerUtilIntArrayUtilSparseArrayUtilThreadUtilhttps://github.com/TheFinestArtist/AndroidBaseUtils
+afinalAfinal是一个android的ioc，orm框架，内置了四大模块功能：FinalAcitivity,FinalBitmap,FinalDb,FinalHttp。通过finalActivity，我们可以通过注解的方式进行绑定ui和事件。通过finalBitmap，我们可以方便的加载bitmap图片，而无需考虑oom等问题。通过finalDB模块，我们一行代码就可以对android的sqlite数据库进行增删改查。通过FinalHttp模块，我们可以以ajax形式请求http数据。https://github.com/yangfuhai/afinal
+List of Android UI/UX Librariesandroid UI库MaterialLayoutButtonList / GridViewPagerLabel / FormImageSeekBarProgressMenuActionBarDialogCalendarGraphAnimationParallaxEffect (Blur… etc)Otherhttps://github.com/wangchang163/awesome-android-ui
+36krReaderMD风格的36氪Android阅读客户端个人开发的36氪Android阅读客户端，数据通过Jsoup解析web端网页获取，由于最近网站改版，暂时不支持加载分页数据T T。
+个人业余时间的项目，包含了android中一些常用的工具类、代码段。
+设计风格希望能遵循Material Design，尽量使用google提供的原生控件，包括android design support library
+使用了国内的baas服务Bmob，给app加入了用户系统，实现了收藏云同步。
+一些知识点
+首页RecyclerView添加Header的正确方式CardView的使用：关于使用 CardView 开发过程中要注意的细节个人信息页矢量图片的使用：VectorDrawable怎么玩、Android Support Library 23.2其他在清单文件中设置android:parentActivityName的问题：解决方案style文件中设置android:windowIsTranslucent后activity切换动画失效（我这边直接不设置那个属性了）：解决方案当targetSdkVersion设为23以上时，处理运行时权限：Android M 新的运行时权限开发者需要知道的一切使用的第三方库轻量级的缓存框架：ASimpleCache图片加载框架：universal-image-loaderorm框架：ormliteStickyListHeadersPhotoView监听可滚动View的滑动状态：Android-ObservableScrollViewan unofficial mirror for android volley library：android-volley可无限循环滑动的ViewPager（为了配合首页自动滑动稍做改动）：InfiniteViewPagerhttps://github.com/kinneyyan/36krReader
+CommonSDK该项目包含了常用的方法库和它的例子。库包含实现社会SDK即简单的方法：Facebook的，Twitter，谷歌，LinkedIn。该项目主要包括以下共同的特点。
+空的EditText验证。检查网络可用（网络或无线网络）。电子邮件地址验证。获得字符串格式当前日期。从您的设备获取的设备ID。设置偏好，并获得首选项。如String，整型，长，布尔浮动。删除所有喜好。获取当前位置。捏图像放大。获取应用程序图标绘。发送本地通知。在使用应用程序上的禁用休眠模式。启用而使用应用程序的睡眠模式。从选定的目录路径打开的图像。从选定的目录路径打开视频。打开网址到手机浏览器。显示在地图上的地址位置。创建文件夹或目录。从网址下载图片。显示日期选择器。显示时间选择器。获取文件的计数序号。计算时间差。从字符串转换日期为日期格式。获取设备的高度。获取设备宽度。获取随机数。添加后缀为数字。转换逗号分隔字符串数组列表。转换的ArrayList到逗号分隔字符串。播放背景音乐。停止背景音乐。应用图像模糊的效果。绘制转换为位图。位图转换为可绘制。获得应用程序的声音设备的音量。设置位图图像的喜好。获取位图图像的形式偏好。获取应用程序版本的代码。设置垂直文本视图（左，右）。检查是否SD卡上提供的设备。显示共享对话框。更改设备配置文件（静音或振动模式或正常）。更改位图圆角走投无路。显示警告对话框或吐司。防止双击。拍摄图像。选择图片。预览捕获的图像。录制视频。挑选视频。预览捕获视频。获取摄取的图像或录像（所有版本）的路径。整合社交平台。添加连锁反应。检查网站的网址是否有效。获取具有电子邮件地址的所有联系人。获取视图（截图）的位图。从ImageView的选取颜色。获取文件大小。下载文件。https://github.com/CommonUtils/android
+KnowledgeKnowledge是一个MaterialDesign风格和MVP模式的项目。你可以方便地阅读知乎日报和煎蛋网的新鲜事，还可以浏览妹子图，让我们一起嘿嘿嘿~（作者比较懒，只在360手机助手上线了。如果你在学习中遇到任何bug、疑问，请提交一个issue）Android Design库的使用自定义你的基类Activity应用MVP模式到项目中使用Webview时避免内存泄露OKhttp封装框架的用法用Gson解析网络数据用Glide加载图片用Realm缓存数据加特效的启动页的写法设置页的写法Activity的转换特效（对，duang的那种）更多惊喜等待你发现（手动斜眼）使用到的库
+dependencies {debugCompile ‘com.squareup.leakcanary:leakcanary-android:1.3.1’ //检测内存泄露compile ‘com.android.support:design:23.1.1’//design控件库compile ‘com.bigkoo:convenientbanner:2.0.5’//一个图片轮播控件compile ‘com.android.support:cardview-v7:23.1.1’compile ‘com.github.bumptech.glide:glide:3.6.0’//图片加载库compile ‘com.jakewharton:butterknife:7.0.1’//帮你省去findviewcompile ‘com.google.code.gson:gson:2.5’compile ‘com.zhy:okhttputils:2.2.0’//okhttp封装compile ‘com.android.support:recyclerview-v7:23.1.1’compile ‘io.realm:realm-android:0.87.4’//快速、简洁的跨平台数据库compile ‘com.github.orhanobut:logger:1.12’//漂亮的log工具}https://github.com/DanteAndroid/Knowledge
+TagCloudViewTagCloudView是一个完全基于Android ViewGroup编写的控件，支持将一组View展示为一个3D球形集合，并支持全方向滚动。
+这里写图片描述
+
+https://github.com/misakuo/3dTagCloudAndroid
+CircleDemo仿微信(weixin wechat)实现的朋友圈，模拟与后台交互实现了点赞、评论、删除等功能，RecyclerView可以根据键盘的显示或隐藏实现联动。与后台交互采用mvp模式。关键字：wechat weixin 微信朋友圈https://github.com/Naoki2015/CircleDemo
+AppCompat-Extension-LibraryAccountHeaderViewFloatingActionMenuCircleImageViewPicker DialogsFlexibleToolbarLayoutDelightful Detail DrawablesTypefaceCompathttps://github.com/TR4Android/AppCompat-Extension-Library
+StickerCamera这是一款集成了相机,图片裁剪,给图片贴贴图打标签的APP。实现相机功能
+实现对图片进行裁剪的功能图片的滤镜功能能为图片添加贴纸(贴纸可移动,放大,旋转)能为图片添加标签(同样可以移动)本地保存制作好的图片,并展示较多的自定义控件,不错的项目架构https://github.com/Skykai521/StickerCamera
+MeiTuanLocateCity仿美团城市选择界面，可直接用在实际项目中https://github.com/yangxu4536/MeiTuanLocateCity
+Notes一款基于Material Design 设计的开源笔记本应用https://github.com/daimajia/Notes
+Meizhi妹纸.gank.io多渠道打包使用 ORM 快速操作数据库访问网络，简单解析 HTMLRecyclerView 瀑布流的使用RecyclerView 底部加载更多的简单实现Material Design 的下拉刷新使用最新的 Design 兼容库使用 5.0 的 Share 组件或元素动画使用 Toolbar 完全替代 ActionBarhttps://github.com/daimajia/Meizhi
+AnimeTaste(全球动画精选)ShareSDK for Android 社交关注。Picasso 图片缓存Baidu-T5Player-SDK-Android 百度T5 Player SDKAndroid-Switch-Backport Switch的兼容库Gif-Movie-View Gif动画播放ViewPagerIndicator 滑动画廊SuperToasts 扩展的Toasts弹出框SwipeBackLayout 滑动退出Android-Support-v7-appcompat Android ActionBar 兼容库sdk-manager-plugin SDK管理工具
+https://github.com/daimajia/AnimeTaste
+LazyThe android tools 自己整理的常用的工具类https://github.com/wangchang163/Lazy
+Android-PickerView仿iOS的PickerView控件，有时间选择和选项选择并支持一二三级联动效果https://github.com/saiwu-bigkoo/Android-PickerView
+AndroidBase采用谷歌官方MVP架构以及RxJava对项目进行封装重构1.网络请求框架：Retrofit
+2.生命周期管理：Rxlifecycle
+3.数据库框架：Ormlite
+4.图片异步加载类库：Glide
+5.事件总线：RxEventbus
+6.Json解析工具：FastJson
+7.ListView、GridView、RecyclerView快速开发适配器
+8.GooleSamples 对 Android 6.0 Permission 封装 EasyPermissions
+9.收集的各种便捷开发的工具类https://github.com/huangwm1984/AndroidBase
+AndroidSweetSheet一个富有动感的Sheet(选择器)https://github.com/zzz40500/AndroidSweetSheet
+
+作者：AFinalStone
+链接：https://www.jianshu.com/p/0a4e057ca0fc
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。

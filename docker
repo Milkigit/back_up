@@ -1,0 +1,30 @@
+安全：
+https://docs.fedoraproject.org/enUS/Fedora/22/html/SELinux_Users_and_Administrators_Guide/index.html
+
+	官方网站/wiki:
+		http://selinuxproject.org/page/Main_Page
+		https://www.nsa.gov/research/selinux/
+		https://github.com/SELinuxProject
+		https://github.com/TresysTechnology/refpolicy
+
+	内核文档：
+		~/Documentation/security/SELinux.txt
+	Refpolicy:
+		https://github.com/TresysTechnology/refpolicy
+	wikipedia:
+		http://en.wikipedia.org/wiki/Security-Enhanced_Linux
+
+	各发行版：
+		https://wiki.debian.org/SELinux
+		http://fedoraproject.org/wiki/SELinux
+		http://wiki.centos.org/HowTos/SELinux
+
+	欧拉wiki：
+		http://rnd-openeuler.huawei.com/wiki/index.php/Security-Enhanced_Linux
+	书籍:
+		《SELinux by Example: Using Security Enhanced Linux》,Frank Mayer
+		《SELinux NSA's Open Source Security Enhanced Linux》,Bill McCarty
+		《SELinux System Administration》,Sven Vermeulen 
+		《SELinux Cookbook》,Sven Vermeulen
+		《Hardening Linux》,James Turnbull
+    《The SElinux Notebook》
